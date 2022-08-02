@@ -9,20 +9,22 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="header">
-        <!--enter cockatil image & name-->
-        <p>My supercool header</p>
+    <audio src="ProjectAudio/audio1.mp3" type="audio.mp3" id="audio1"></audio>
+    <div class="top-header">
     </div>
-    <div class="search-wrapper">
-        <label for="search">Pick Your Poisen!</label>
-        <input type="search" id="search" data-search>
+    <div class="container">
+        <form action="/action_page.php" onsubmit="fetchSearch()" id="search">
+            <h1>Pick Your Poison!</h1>
+            <div class="field">
+                <input type="text" id="search-text" placeholder="Search For..." />
+                <small></small>
+            </div>
+            <div class="field">
+                <button type="submit" class="full">Search</button>
+            </div>
+        </form>
     </div>
-    <div class="drink-cards" data-drink-cards-container></div>
-    <template data-drink-template>
-        <div class="card">
-            <div class="header" data-header></div>
-            <div class="img" data-image></div>
-        </div>
-    </template>
+    <div class="drink-cards" data-drink-cards-container>
+    </div>
 </body>
 </html>

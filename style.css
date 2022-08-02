@@ -1,42 +1,30 @@
-.header {
+.top-header {
     padding: 60px;
     text-align: center;
     background: #1abc9c;
-    color: white;
+    color: black;
     font-size: 30px;
 }
 
-.search-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
-}
-
-input {
-    font-size: 1rem;
-}
-
-.drink-cards {
+.drink-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmanx(100px, 1fr)); */
+    grid-template-columns: auto auto auto auto;
     gap: .25rem;
     margin-top: 1rem;
 }
 
-.card{
+.card-body {
     border: 1px solid black;
     background-color: white;
     padding: .5rem;
 }
 
-.card > .header {
-    margin-bottom: .25rem;
+.card-body > .card-title{
+
+    font-size: 25px;
 }
 
-.card > .body {
-    font-size: .5rem;
-}
-
-.hide {
-    display: none;
+.card-body > .card-text{
+    font-size: .8rem;
 }
