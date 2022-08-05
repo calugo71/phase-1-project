@@ -18,6 +18,7 @@ function fetchSearch(){
         data.forEach(datas => {
             renderDrinkCards(datas)
         })
+    console.log(data);
     });
 };
 
@@ -161,5 +162,4 @@ function renderDrinkCards(datas){
             })
         }
     });
-
 };

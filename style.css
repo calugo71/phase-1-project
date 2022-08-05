@@ -1,3 +1,7 @@
+.body {
+    background-color: black;
+}
+
 .top-header {
     padding: 60px;
     text-align: center;
@@ -5,7 +9,7 @@
     color: white;
     font-family: Proxima Nova, serif;
     font-size: 30px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.6);
 }
 
 .drink-cards{
@@ -19,14 +23,42 @@
 
 .container {
     background: gold;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.6);
+    animation: flicker 1.5s infinate alternate;
+    font-family: Brush Script MT, cursive;
+    font-size: 33px;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(230, 104, 182),
+    0 0 82px rgb(230, 104, 182),
+    0 0 92px rgb(230, 104, 182),
+    0 0 102px rgb(230, 104, 182),
+    0 0 151px rgb(230, 104, 182);
 }
+
+/* @keyframes flicker {
+    0%,18%,22%,25%,53%,57%,100% {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(230, 104, 182),
+    0 0 82px rgb(230, 104, 182),
+    0 0 92px rgb(230, 104, 182),
+    0 0 102px rgb(230, 104, 182),
+    0 0 151px rgb(230, 104, 182);
+    }
+} */
 
 .card-body {
     border: 1px solid black;
     background-color: blue;
     color: white;
     padding: .5rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.6);
 }
 
 .card-body > .card-title{
